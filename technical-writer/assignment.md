@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Debugging Reference"
 title: "Debug Options in Kubernetes"
-description: "Learn how to debug "
+description: "Useful commands, descriptions and links for debugging in Kubernetes"
 icon: ""
 hide_table_of_contents: false
 sidebar_position: 10
@@ -53,7 +53,7 @@ NS1         test        ClusterIP   10.0.95.30  <none>
 ```
 
 Useful options with this command:
-* `-A`: Lists all pods in all namespaces
+* `-A`: Lists all services in all namespaces
 
 #### `kubectl get events`
 `kubectl get events` lists all recent events for resources in your system.
