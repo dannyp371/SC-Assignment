@@ -70,10 +70,10 @@ Useful options with this command:
 * `-o wide`: Lists all events in your current namespace with more information. More generally, `-o` changes the output format of your resource.
 * `--field-selector type=Warning`: Lists all Warning events.
 
-The full documentation for `kubectl get` can be [found here](kubernetes.io/docs/reference/kubectl/generated/kubectl_get/).
+Click [here](kubernetes.io/docs/reference/kubectl/generated/kubectl_get/) for the full documentation for `kubectl get`.
 
 ### `kubectl describe`
-Another command used to get more information on your Kubernetes Cluster(s) is `kubectl describe`. This command gives details on a specific resource of group of resources. For instance, after using `kubectl get pods` you found that one of your pods was not running. You could next use `kubectl describe <pod-name>` to find more information on that pod. Some examples are given below:
+Another command used to get more information on your Kubernetes Cluster(s) is `kubectl describe`. This command gives details on a specific resource or group of resources. For instance, after using `kubectl get pods` you found that one of your pods was not running. You could next use `kubectl describe <pod-name>` to find more information on that specific pod. Some examples are given below:
 
 #### `kubectl describe pod demo-pod`
 ```console
@@ -157,12 +157,12 @@ Conditions:
     Ready           True    Sun, 06 OCT 2024 18:45:37 -0500 Sun, 06 OCT 2024 17:21:39 -0500 KubeletReady                kubelet is posting ready status
 ```
 
-The full documentation for `kubectl describe` can be [found here](kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/).
+Click [here](kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/) for the full documentation for `kubectl describe`.
 
 ### `kubectl cluster-info dump`
 A final command used to gain information about your cluster is `kubectl cluster-info dump`. This command outputs all relevant information regarding the clusters current state. This includes events, configurations, and logs. It is used to give a broad overview of your cluster's status.
 
-The full documentation for `kubectl cluster-info dump` can be [found here](kubernetes.io/docs/reference/kubectl/generated/kubectl_cluster-info/kubectl_cluster-info_dump/).
+Click [here](kubernetes.io/docs/reference/kubectl/generated/kubectl_cluster-info/kubectl_cluster-info_dump/) for the full documentation for `kubectl cluster-info dump`.
 
 ## Review your Cluster's Logs
 Reviewing logs in your cluster is useful for finding errors while debugging. Logs will often give errors that will explain why a resource in your Kubernetes environment is non-operational. This is used to gain a deeper understanding of why a part of your cluster is non-operational. An example of `kubectl logs` is given below:
@@ -186,7 +186,7 @@ Useful options with this command:
 * `-c <container-name>`: Prints logs for a specific container in a pod
 * `<file-name>.log`: Ending your command with a file name allows you to output your logs to that file for further refinement
 
-The full documentation for `kubectl logs` can be [found here](kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/).
+Click [here](kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/) for full documentation for `kubectl logs`.
 
 ## Test your Pod
 `kubectl debug` creates an ephemeral copy of your target container(s) in a pod. This allows you to then test things in this container without interrupting or impacting your live container(s). Use this command to test a container which has errors or is non-operational. An example is given below: 
@@ -199,7 +199,7 @@ Useful options with this command:
 * `-t`: Allocate TTY for debugging the container
 * `--image`: Image used to create your ephemeral container.
 
-The full documentation for `kubectl debug` can be [found here](kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/).
+Click [here](kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/) for the full documentation for `kubectl debug`.
 
 ## Issue CLI Commands Inside of your Containers
 `kubectl exec` allows you to issue CLI commands from inside your containers. This is useful way to check configuration files, validate a volume mounting, or troubleshoot application behaviour. `kube exec` provides a direct line into your containers, and allows you to operate as you would in a traditional linux environment. Write the command you wish to issue after the `--` as shown below:
